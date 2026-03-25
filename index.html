@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notion</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <section>
+        <img src="imgs/task.png" alt="task" />
+        <h1>Sistema de Anotações</h1>
+      </section>
+
+      <header>
+        <img src="imgs/search.png" alt="Lupa" />
+        <input type="text" placeholder=" Buscar anotação..." id="search" />
+        <button id="add">+ Nova anotação</button>
+      </header>
+
+      <section class="tasks">
+        <div class="task-empty">
+          <p>+ nova anotação aparece aqui</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="add-task" style="display: none">
+          <div class="title-task">
+            <img src="imgs/pencil.png" alt="Icon pencil" />
+            <p>Nova Anotação</p>
+          </div>
+          <label for="title">TÍTULO</label>
+          <input
+            type="text"
+            placeholder="Digite o título da atividade:"
+            id="title"
+          />
+
+          <label for="content">CONTEÚDO</label>
+          <input
+            type="text"
+            placeholder="Digite o conteúdo da atividade"
+            id="content"
+            style="padding-bottom: 80px"
+          />
+
+          <div class="buttons">
+            <button class="cancel">Cancelar</button>
+            <button class="save" id="save">Salvar</button>
+            <i class="fa-duotone fa-solid fa-square-check" style="color: #FFF;"></i>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
